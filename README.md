@@ -10,9 +10,15 @@ As you know, all visual elements on a webpage are HTML elements, styled using CS
 - [Resources](#resources)
 - [Getting Started](#getting-started)
 - [Variables](#variables)
+  - [Numbers and Strings](#numbers-and-strings)
+  - [Arrays](#arrays)
+  - [Objects](#objects)
+  - [Functions](#functions)
+  - [Properties and Methods](#properties-and-methods)
 - [Variable Scope](#variable-scope)
-- [Arrays](#arrays)
+- [Array Manipulation](#array-manipulation)
 - [DOM Manipulation](#dom-manipulation)
+  - [Waiting for Content to Load](#waiting-for-content-to-load)
 - [Events](#events)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
