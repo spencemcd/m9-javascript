@@ -10,9 +10,15 @@ As you know, all visual elements on a webpage are HTML elements, styled using CS
 - [Resources](#resources)
 - [Getting Started](#getting-started)
 - [Variables](#variables)
+  - [Numbers and Strings](#numbers-and-strings)
+  - [Arrays](#arrays)
+  - [Objects](#objects)
+  - [Functions](#functions)
+  - [Properties and Methods](#properties-and-methods)
 - [Variable Scope](#variable-scope)
-- [Arrays](#arrays)
+- [Array Manipulation](#array-manipulation)
 - [DOM Manipulation](#dom-manipulation)
+  - [Waiting for Content to Load](#waiting-for-content-to-load)
 - [Events](#events)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -215,7 +221,7 @@ console.log(len)
 This [blog-post](https://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/) is much more robust explanation of the topic, and you should seek it out ~~if~~ when you run into scoping problems.  
 
 ## Array Manipulation
-Perhaps the most common data structure you will work with is the `array`. For example, when you read in a `.csv` file into your program, each row is typically interpreted as an element in an array. Note, each one of those elements in the `array` is an `object`, with the key-value pairs representing the columns and values of the `.csv` file (more on this in [module-5](https://github.com/INFO-474/m5-data).)
+Perhaps the most common data structure you will work with is the `array`. For example, when you read in a `.csv` file into your program, each row is typically interpreted as an element in an array. Note, each one of those elements in the `array` is an `object`, with the key-value pairs representing the columns and values of the `.csv` file.
 
 A common task when working with arrays is to iterate through each element and pass that element into a function. For example, you may be adding a point to a map for each element in an array. While you could write a loop, this can also accomplished using the `map` method:
 
@@ -241,7 +247,7 @@ var threeLarger = arr.map(function(num){
 Note, this is similar to the `forEach` method, but the `forEach` method **does not** return a value. To practice accessing information via object properties, and leveraging different object methods, see [exercise-2](exercise-2).
 
 ## DOM Manipulation
-This is all well and good, but what does JavaScript have to do with your webpage? Similarly to how you can select elements using CSS, you can select elements from your DOM using JavaScript. This will enable you to **get**, **add**, **change**, and **remove** elements from your webpage. In [module-4](https://github.com/INFO-474/m4-jquery), we'll introduce the `jQuery` library that provides a much more succinct syntax for accomplishing the same tasks. Under the hood, the `d3` library leverages the same processes, so it's important to understand what's happening (even if you will rarely use the native JavaScript syntax):
+This is all well and good, but what does JavaScript have to do with your webpage? Similarly to how you can select elements using CSS, you can select elements from your DOM using JavaScript. This will enable you to **get**, **add**, **change**, and **remove** elements from your webpage. In [module-10](https://github.com/info343c-a16/m10-jquery), we'll introduce the `jQuery` library that provides a much more succinct syntax for accomplishing the same tasks. Under the hood, libraries such as `jQuery` and `d3` library leverages the same processes, so it's important to understand what's happening (even if you will _rarely_ use the native JavaScript syntax):
 
 ```javascript
 // Set the innerHTML property of the element with id "demo"
