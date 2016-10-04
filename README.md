@@ -1,4 +1,4 @@
-# Module 3: JavaScript
+# Module 9: JavaScript
 
 ## Overview
 As you know, all visual elements on a webpage are HTML elements, styled using CSS: JavaScript is what will bring those elements to life. JavaScript is a **scripting language** used to process data, create/manipulate HTML elements, and assign events (i.e, click, hover, etc.) to those elements. The vast majority of the code you will write in this course will be JavaScript, and you should feel confident in your functional programming skills in the language.
