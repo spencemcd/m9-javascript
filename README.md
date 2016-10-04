@@ -83,7 +83,7 @@ String variables are created by setting a variable equal to a set of characters 
 var str = "hello there";
 
 // Concatenate two strings together using the `+` sign
-var sentence = str + ', Jim'
+var sentence = str + ', Jim';
 ```
 
 To determine the `type` of variable that you're working with, you can pass it to the `typeof` function:
@@ -102,7 +102,7 @@ In JavaScript, _arrays_ allow you to store collections of information within the
 var arr = [13, 'fourteen', 15];
 
 // Access array elements by their index, starting at 0:
-arr[0] // returns 13
+arr[0]; // returns 13
 
 ```
 
@@ -132,7 +132,7 @@ person.name; // returns 'steve'
 person['name']; // also returns 'steve'
 person.favorites; // returns the full `favorites` objects
 person.favorites.foods; // returns ['pizza', 'salad', 'yogurt']
-person.favorites.foods[1] // returns 'salad', the first element in the 'foods' array
+person.favorites.foods[1]; // returns 'salad', the first element in the 'foods' array
 ```
 
 ### Functions
@@ -180,10 +180,10 @@ var data = [1, 2, 3];
 var num_obs = data.length;
 
 // Add a new observation into the array of data using the `push` method
-data.push(4) // data is now [1, 2, 3, 4]
+data.push(4); // data is now [1, 2, 3, 4]
 
 // Use the filter methods to determine which numbers are greater than 2
-var greater_than_two = data.filter(function(d){return d>2 })
+var greater_than_two = data.filter(function(d){return d>2 });
 
 // Note: data is unchanged, and filter took a `function` as it's parameter.  
 ```
@@ -206,16 +206,16 @@ var data = [1, 2, 3];
 // Processing data function
 var process_data = function(){
   // Local scope: Variables created in here are not accessible outside of this function
-  var len = data.length
+  var len = data.length;
 
   // Internal function: `len` will be accessible
   var additional_processing = function() {
     // You can access `len` within internal functions
-  }
+  };
 };
 
 // len is not accessible here: "Uncaught ReferenceError: len is not defined"
-console.log(len)
+console.log(len);
 ```
 
 This [blog-post](https://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/) is much more robust explanation of the topic, and you should seek it out ~~if~~ when you run into scoping problems.  
@@ -227,20 +227,20 @@ A common task when working with arrays is to iterate through each element and pa
 
 ```javascript
 // Array of numbers
-var arr = [1,2,3,4,5]
+var arr = [1,2,3,4,5];
 
 // Function to return a value plus three
 var plusThree = function(num) {
-  return num + 3
-}
+  return num + 3;
+};
 
 // Pass each element in `arr` to the `plusThree` function
-var threeLarger = arr.map(plusThree)
+var threeLarger = arr.map(plusThree);
 
 // This also could be done via an anonymous function
 var threeLarger = arr.map(function(num){
-  return num + 3
-})
+  return num + 3;
+});
 
 ```
 
